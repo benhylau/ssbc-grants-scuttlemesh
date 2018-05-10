@@ -45,7 +45,7 @@ On each date in that table, you can send a Pull Request titled like `May 26 Take
 |:-------------:|:--------------------------------------------:|:------:|:-----:|:------:|:-----:|
 | @benhylau     | `0xYOUR_ETHEREUM_ADDRESS_MAKE_SURE_ITS_GOOD` | 0.35   |       |        |       |
 
-In the Pull Request description, indicate what you have done over the 2-week period prior (i.e. between May 14-26 for the first cycle), so other collaborators can be reminded of what you worked on and it will help me compile a _Dev Diary_ entry for the SSBC grant ;)
+In the Pull Request description, indicate what you have done over the 2-week period prior (i.e. between May 14-26 for the first cycle), so other collaborators can be reminded of what you worked on and it will help me compile a _Dev Diary_ entry at `%+KCgwY3T/qEXktQkNQFM7qzNnKMbPq7KRkG4UmDJ8XI=.sha256` for the SSBC grant ;)
 
 Mention the GitHub Issues with the `ssbc` tag, but you can also bring up things like... "helped @benhylau debug his jekyll environment" because I was unable to code review the website with a broken toolchain, as an example. Once your _Take Request_ gets two `+1`'s from other collaborators on the list, @benhylau will send you the requested amount to the address and merge your Pull Request.
 
