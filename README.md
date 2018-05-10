@@ -13,7 +13,7 @@ It turns out a lot of people in the community are also excited about having SSB 
 >* Worksheet and modification of first module activity to base on sbot / patchwork
 >* A proper course website hosted on GitHub Pages (now presentations and generated PDF assets are on there but with no landing page, the mesh-orange images and node configs are in separate repos, it would be hard for someone to piece everything together to run this workshop, a website would help a lot to navigate)
 
-Eventually _RPi ScuttleMesh workshop_ was selected by @staltz, the adjudicator for this round, as one of the three accepted proposals for the May 2018 grant cycle, and I am of course super grateful for this opportunity! You can find the announcement at `%CnkbBEjaoorBhCkimLQGjDyc2k9xYTM+7osj5VEPZ9s=.sha256` and more information about the grant at `%Qmj97E3/i5EEp2c1rg/0sj5eaJP3YB682rJTvRWuvB0=.sha256`.
+Eventually _RPi ScuttleMesh workshop_ was selected by [@staltz](https://github.com/staltz), the adjudicator for this round, as one of the three accepted proposals for the May 2018 grant cycle, and I am of course super grateful for this opportunity! You can find the announcement at `%CnkbBEjaoorBhCkimLQGjDyc2k9xYTM+7osj5VEPZ9s=.sha256` and more information about the grant at `%Qmj97E3/i5EEp2c1rg/0sj5eaJP3YB682rJTvRWuvB0=.sha256`.
 
 ## Work plan
 
@@ -21,7 +21,7 @@ I have translated the above deliverables into _GitHub Issues_ spread across a co
 
 * https://github.com/tomeshnet/mesh-orange/issues?q=is%3Aopen+is%3Aissue+label%3Assbc
 * https://github.com/tomeshnet/p2p-internet-workshop/issues?q=is%3Aopen+is%3Aissue+label%3Assbc
-* https://github.com/tomeshnet/ssbc-grants-scuttlemesh/issues?q=is%3Aopen+is%3Aissue+label%3Assbc
+* https://github.com/benhylau/ssbc-grants-scuttlemesh/issues?q=is%3Aopen+is%3Aissue+label%3Assbc
 
 Of course things could change along the way, some tasks may lead to dead ends and new tasks may be added, but this is where we can start. If you decide to work on a task, please assign it to yourself so no one else works on it in parallel.
 
@@ -31,7 +31,7 @@ The grant money is paid in ETH and held at this address which only I have access
 
 >[0xc005018f06E328c145331C1b17a03Aba4d7D7E8c](https://etherscan.io/address/0xc005018f06E328c145331C1b17a03Aba4d7D7E8c)
 
-I would like to share this grant with other contributors via a _take-what-you-want_ model, which I have been curious about and this seems like the perfect opportunity to try it out. Participation will be limited to existing active contributors @tomeshnet, and to participate in this little social experiment you need to send a _Pull Request_ to [take.md](take.md) in this repository and add your _GitHub Handle_ and _ETH Address_ like such:
+I would like to share this grant with other contributors via a _take-what-you-want_ model, which I have been curious about and this seems like the perfect opportunity to try it out. Participation will be limited to existing active contributors [@tomeshnet](https://github.com/tomeshnet), and to participate in this little social experiment you need to send a _Pull Request_ to [take.md](take.md) in this repository and add your _GitHub Handle_ and _ETH Address_ like such:
 
 | GitHub Handle | ETH Address                                  | May 26 | Jun 9 | Jun 23 | Jul 7 |
 |:-------------:|:--------------------------------------------:|:------:|:-----:|:------:|:-----:|
