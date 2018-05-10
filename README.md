@@ -29,7 +29,7 @@ Of course things could change along the way, some tasks may lead to dead ends an
 
 The grant money is paid in ETH and held at this address which only I have access to:
 
->`0xc005018f06E328c145331C1b17a03Aba4d7D7E8c`
+>[0xc005018f06E328c145331C1b17a03Aba4d7D7E8c](https://etherscan.io/address/0xc005018f06E328c145331C1b17a03Aba4d7D7E8c)
 
 I would like to share this grant with other contributors via a _take-what-you-want_ model, which I have been curious about and this seems like the perfect opportunity to try it out. Participation will be limited to existing active contributors @tomeshnet, and to participate in this little social experiment you need to send a _Pull Request_ to [payment.md](payment.md) in this repository and add your _GitHub Handle_ and _ETH Address_ like such:
 
