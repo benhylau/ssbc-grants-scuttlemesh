@@ -5,3 +5,4 @@
 | GitHub Handle | ETH Address                                  | May 26 | Jun 9 | Jun 23 | Jul 7 |
 |:-------------:|:--------------------------------------------:|:------:|:-----:|:------:|:-----:|
 | @benhylau     | `0xYOUR_ETHEREUM_ADDRESS_MAKE_SURE_ITS_GOOD` |        |       |        |       |
+| @Shrinks99    | `0x8763F4E7be6103D430FA54680Ce6A40F444F1678` |        |       |        |       |
