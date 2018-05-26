@@ -1,5 +1,5 @@
-Installing Scuttlebot on SBCs
-=============================
+Installing Scuttlebot on single-board computers (SBCs)
+======================================================
 
 ## mesh-orange
 
