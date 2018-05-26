@@ -56,7 +56,7 @@ root@bloor:~# docker exec -it ssb sbot log
 
 ## `sbot gossip.peers`
 
-This happens over local network discover with three Raspberry Pis plugged into a home router via ethernet cables. No ssb pub is involved here.
+This happens over local network discovery with three Raspberry Pis plugged into a home router via ethernet cables. No ssb pub is involved here.
 
 ```
 root@bloor:~# docker exec -it ssb sbot gossip.peers
