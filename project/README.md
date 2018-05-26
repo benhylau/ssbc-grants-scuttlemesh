@@ -1,7 +1,11 @@
 Getting Started with ScuttleMesh
 ================================
 
-**ScuttleMesh** is [Secure Scuttlebutt](https://github.com/ssbc/secure-scuttlebutt) over a self-configuring encrypted mesh network formed by Raspberry Pis.
+**_ScuttleMesh_** is Secure Scuttlebutt over a self-configuring encrypted mesh network formed by Raspberry Pis.
+
+[_Secure Scuttlebutt (SSB)_](https://github.com/ssbc/secure-scuttlebutt): A database of unforgeable append-only feeds, optimized for efficient replication for peer to peer protocols.
+
+[_Mesh Orange_](https://github.com/tomeshnet/mesh-orange): A small Debian-based operating system to support mesh networking on ARM single-board computers.
 
 ## Setting up mesh-orange
 
