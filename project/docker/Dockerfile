@@ -1,9 +1,10 @@
 FROM alpine
 MAINTAINER Benedict Lau <benedict.lau@groundupworks.com>
 
-RUN apk add --update-cache
-RUN apk add autoconf automake build-base libtool ncurses nodejs nodejs-npm python
+RUN apk add --no-cache nodejs
 
-RUN npm install scuttlebot -g --unsafe-perm
+RUN apk add --no-cache --virtual .build libtool nodejs-npm autoconf automake build-base python &&  \
+    npm install scuttlebot -g --unsafe-perm ; \
+    apk del .build
 
 ENTRYPOINT sbot server
