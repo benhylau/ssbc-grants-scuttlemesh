@@ -16,12 +16,12 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 RUN mkdir /run/nginx; \
     apk add --no-cache --virtual .git git; \
-    git clone https://github.com/darkdrgn2k/ssb-web-pi.git ~/ssb-web-pi.git; \
-    cp -r ~/ssb-web-pi.git/html /var/www/html; \
-    cp -r ~/ssb-web-pi.git/backend /var/www/backend; \
+    git clone https://github.com/darkdrgn2k/ssb-web-pi.git ~/ssb-web-pi; \
+    cp -r ~/ssb-web-pi/html /var/www/html; \
+    cp -r ~/ssb-web-pi/backend /var/www/backend; \
     mkdir /var/www/backend/keys ; \
-    chown nobody.nobody  -R /var/www/html /var/www/backend; \
-    chown nobody.nobody  -R /var/www/html/* /var/www/backend/*; \
+    chown nobody.nobody -R /var/www/html /var/www/backend; \
+    chown nobody.nobody -R /var/www/html/* /var/www/backend/*; \
     apk del .git;\
     ln -s /usr/lib/node_modules /var/www/backend; \
     ln -s /usr/bin/sbot /usr/local/bin/sbot; \
@@ -31,4 +31,4 @@ EXPOSE 80
 EXPOSE 8008
 EXPOSE 8989
 
-ENTRYPOINT  ~/ssb-web-pi.git/start-docker.sh
+ENTRYPOINT  ~/ssb-web-pi/start-docker.sh
