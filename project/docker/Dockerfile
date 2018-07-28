@@ -1,16 +1,15 @@
 FROM alpine
 MAINTAINER Benedict Lau <benedict.lau@groundupworks.com>
 
-RUN apk add --no-cache nodejs nginx php5-fpm php5-json socat
+RUN apk add --update-cache
 
-RUN apk add --no-cache --virtual .build libtool nodejs-npm autoconf automake build-base python &&  \
-    npm install scuttlebot \
-                ssb-keys \
-                ssb-client \
-                ssb-feed \
-                pull-stream \
-                    -g --unsafe-perm ; \
-    apk del .build
+# Add sbot dependencies
+RUN apk add autoconf automake build-base libtool ncurses nodejs nodejs-npm python
+
+# Add ssb-web-pi dependencies
+RUN apk add nginx php5-fpm php5-json socat
+
+RUN npm install scuttlebot ssb-keys ssb-client ssb-feed pull-stream -g --unsafe-perm
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
@@ -31,4 +30,4 @@ EXPOSE 80
 EXPOSE 8008
 EXPOSE 8989
 
-ENTRYPOINT  ~/ssb-web-pi/start-docker.sh
+ENTRYPOINT ~/ssb-web-pi/start-docker.sh
