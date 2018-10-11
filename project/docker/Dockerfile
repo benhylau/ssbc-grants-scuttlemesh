@@ -10,7 +10,7 @@ RUN apk add --no-cache --virtual .build libtool nodejs-npm autoconf automake bui
                 ssb-feed \
                 pull-stream \
                     -g --unsafe-perm ; \
-    npm install asyncmemo \  
+    npm install asyncmemo \
                 hashlru \
                 pull-stream \
                 pull-cat multicb \
@@ -36,9 +36,8 @@ RUN apk add --no-cache --virtual .build libtool nodejs-npm autoconf automake bui
                 pull-box-stream \
                 base64-url \
                 ssb-backlinks \
-                     --unsafe-perm; \
-    apk del .build; \
-    ln -s /usr/bin/sbot /usr/local/bin/sbot
+                ssb-private \
+                     --unsafe-perm;
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY ssb-broadcast.sh /usr/local/bin/ssb-broadcast.sh
@@ -50,6 +49,8 @@ RUN mkdir /run/nginx; \
     sleep 5 ;\
     cd ~/.ssb/node_modules;  \
     git clone https://github.com/ssbc/patchfoo.git patchfoo; \
+    sbot plugins.install ssb-private; \
+    sbot plugins.install ssb-backlinks; \
     sbot plugins.enable patchfoo; \
     sed -i 's#var Git#//var Git#' patchfoo/lib/app.js  patchfoo/lib/app.js; \
     sed -i 's#this.git = new Git(this.sbot, this.config)#//this.git = new Git(this.sbot, this.config)#' patchfoo/lib/app.js
