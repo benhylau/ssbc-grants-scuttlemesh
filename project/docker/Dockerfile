@@ -55,7 +55,7 @@ RUN mkdir /run/nginx; \
     sed -i 's#this.git = new Git(this.sbot, this.config)#//this.git = new Git(this.sbot, this.config)#' patchfoo/lib/app.js ; \
     rm -rf ~/.ssb/secret
     
-copy makeNewKey.js ~/.ssb/node_modules;
+COPY makeNewKey.js ~/.ssb/node_modules;
 
 EXPOSE 80
 EXPOSE 8008
