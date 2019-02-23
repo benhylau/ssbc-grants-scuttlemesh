@@ -42,7 +42,6 @@ RUN apk add --no-cache --virtual .build libtool nodejs-npm autoconf automake bui
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY ssb-broadcast.sh /usr/local/bin/ssb-broadcast.sh
 COPY start-docker.sh /usr/local/bin/start-docker.sh
-
 RUN mkdir /run/nginx; \
     apk add --no-cache --virtual .git git; \
     (sbot server &); \
@@ -54,6 +53,8 @@ RUN mkdir /run/nginx; \
     sbot plugins.enable patchfoo; \
     sed -i 's#var Git#//var Git#' patchfoo/lib/app.js  patchfoo/lib/app.js; \
     sed -i 's#this.git = new Git(this.sbot, this.config)#//this.git = new Git(this.sbot, this.config)#' patchfoo/lib/app.js
+    
+copy makeNewKey.js ~/.ssb/node_modules;
 
 EXPOSE 80
 EXPOSE 8008
