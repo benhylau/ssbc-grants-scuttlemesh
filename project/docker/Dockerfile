@@ -52,7 +52,8 @@ RUN mkdir /run/nginx; \
     sbot plugins.install ssb-backlinks; \
     sbot plugins.enable patchfoo; \
     sed -i 's#var Git#//var Git#' patchfoo/lib/app.js  patchfoo/lib/app.js; \
-    sed -i 's#this.git = new Git(this.sbot, this.config)#//this.git = new Git(this.sbot, this.config)#' patchfoo/lib/app.js
+    sed -i 's#this.git = new Git(this.sbot, this.config)#//this.git = new Git(this.sbot, this.config)#' patchfoo/lib/app.js ; \
+    rm -rf ~/.ssb/secret
     
 copy makeNewKey.js ~/.ssb/node_modules;
 
